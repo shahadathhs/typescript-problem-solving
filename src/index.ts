@@ -1,6 +1,7 @@
 import { filterFemalesAndMapNames } from 'app/array-filtering-and-mapping'
 import { sumOfEvenNumbers } from 'app/array-reduction'
 import { composeFunctions } from 'app/function-composition'
+import { checkLeapYear } from 'app/leap-year-checker'
 import { getBookTitles } from 'app/object-manipulation'
 import { sortCarsByYearAsc } from 'app/sorting-objects'
 import { books } from 'data/book'
@@ -9,27 +10,27 @@ import { numbers } from 'data/number'
 import { people } from 'data/person'
 
 // * Problem 1
-console.info('Problem 1: \n')
-console.info('Array Filtering and Mapping')
+console.info('Problem 1: Array Filtering and Mapping \n')
 filterFemalesAndMapNames(people)
 
 // * Problem 2
-console.info('\nProblem 2: \n')
-console.info('Object Manipulation')
+console.info('\nProblem 2: Object Manipulation \n')
 getBookTitles(books)
 
 // * Problem 3
-console.info('\nProblem 3: \n')
-console.info('Function Composition')
+console.info('\nProblem 3: Function Composition \n')
 composeFunctions(2)
 
 // * Problem 4
-console.info('\nProblem 4: \n')
-console.info('Sorting Objects')
+console.info('\nProblem 4: Sorting Objects \n')
 sortCarsByYearAsc(cars)
 
 
 // * Problem 5
-console.info('\nProblem 5: \n')
-console.info('Array Reduction')
+console.info('\nProblem 5: Array Reduction \n')
 sumOfEvenNumbers(numbers)
+
+// * Problem 6
+console.info('\nProblem 6: Leap Year Checker \n')
+checkLeapYear(2000)
+checkLeapYear(2001)
