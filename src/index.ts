@@ -1,9 +1,11 @@
 import { filterFemalesAndMapNames } from 'app/array-filtering-and-mapping'
+import { sumOfEvenNumbers } from 'app/array-reduction'
 import { composeFunctions } from 'app/function-composition'
 import { getBookTitles } from 'app/object-manipulation'
-import { sortCarsByYearAsc, sortCarsByYearDesc } from 'app/sorting-objects'
+import { sortCarsByYearAsc } from 'app/sorting-objects'
 import { books } from 'data/book'
 import { cars } from 'data/car'
+import { numbers } from 'data/number'
 import { people } from 'data/person'
 
 // * Problem 1
@@ -19,11 +21,15 @@ getBookTitles(books)
 // * Problem 3
 console.info('\nProblem 3: \n')
 console.info('Function Composition')
-const result = composeFunctions(2)
-console.info(result)
+composeFunctions(2)
 
 // * Problem 4
 console.info('\nProblem 4: \n')
 console.info('Sorting Objects')
 sortCarsByYearAsc(cars)
-sortCarsByYearDesc(cars)
+
+
+// * Problem 5
+console.info('\nProblem 5: \n')
+console.info('Array Reduction')
+sumOfEvenNumbers(numbers)

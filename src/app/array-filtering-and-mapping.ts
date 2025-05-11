@@ -9,7 +9,15 @@
 import { TPerson } from 'types/person'
 
 export const filterFemalesAndMapNames = (people: TPerson[]) => {
+  // * get females
   const females: TPerson[] = people?.filter((person: TPerson) => person?.gender === 'female')
+  // * get names
   const names: string[] = females?.map((person: TPerson) => person?.name)
+
+  // * print
+  console.info('Given people: ', people, '\n')
   console.info('Names of females: ', names, '\n')
+
+  // * return
+  return names
 }

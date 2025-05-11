@@ -9,10 +9,18 @@ export const squareANumber = (num: number) => num * num
 export const doubleNumber = (num: number) => num * 2
 export const addFive = (num: number) => num + 5
 
-export const composeFunctions = (num: number) => addFive(doubleNumber(squareANumber(num)))
-
-export const composeFunctions2 = (num: number) => {
+export const composeFunctions = (num: number) => {
+  // * square -> double -> add
   const square = squareANumber(num)
   const double = doubleNumber(square)
-  return addFive(double)
+  const add = addFive(double)
+
+  // * print
+  console.info('Given number: ', num, '\n')
+  console.info('Result: ', add, '\n')
+
+  // * return
+  return add
 }
+
+export const composeFunctions2 = (num: number) => addFive(doubleNumber(squareANumber(num)))

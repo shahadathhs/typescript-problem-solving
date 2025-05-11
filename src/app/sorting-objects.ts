@@ -9,11 +9,25 @@
 import { TCar } from 'types/car'
 
 export const sortCarsByYearAsc = (cars: TCar[]) => {
+  // * sort by year asc
   const sortedCars: TCar[] = cars?.sort((a: TCar, b: TCar) => a?.year - b?.year)
+
+  // * print
+  console.info('Given cars: ', cars, '\n')
   console.info('Sorted cars by year asc: ', sortedCars, '\n')
+
+  // * return
+  return sortedCars
 }
 
 export const sortCarsByYearDesc = (cars: TCar[]) => {
+  // * sort by year desc
   const sortedCars: TCar[] = cars?.sort((a: TCar, b: TCar) => b?.year - a?.year)
+
+  // * print
+  console.info('Given cars: ', cars, '\n')
   console.info('Sorted cars by year desc: ', sortedCars, '\n')
+
+  // * return
+  return sortedCars
 }

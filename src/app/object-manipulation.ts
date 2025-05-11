@@ -9,6 +9,13 @@
 import { TBook } from 'types/book'
 
 export const getBookTitles = (books: TBook[]) => {
+  // * get book titles
   const bookTitles: string[] = books?.map((book: TBook) => book?.title)
+
+  // * print
+  console.info('Given books: ', books, '\n')
   console.info('Book titles: ', bookTitles, '\n')
+
+  // * return
+  return bookTitles
 }
