@@ -1,5 +1,6 @@
 import { filterFemalesAndMapNames } from 'app/array-filtering-and-mapping'
 import { sumOfEvenNumbers } from 'app/array-reduction'
+import { findMaximumValue } from 'app/find-maximum-value'
 import { composeFunctions } from 'app/function-composition'
 import { checkLeapYear } from 'app/leap-year-checker'
 import { getBookTitles } from 'app/object-manipulation'
@@ -38,3 +39,7 @@ checkLeapYear(2000)
 // * Problem 7
 console.info('\nProblem 7: Unique Values \n')
 getUniqueValues(numbersWithDuplicates)
+
+// * Problem 8
+console.info('\nProblem 8: Find Maximum Value \n')
+findMaximumValue(numbers)
