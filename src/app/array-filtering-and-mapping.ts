@@ -6,21 +6,11 @@
     Print the final result.
 */
 
-interface Person {
-  name: string
-  age: number
-  gender: string
-}
+import { TPerson } from "types/person"
 
-const people: Person[] = [
-  { name: 'John', age: 30, gender: 'male' },
-  { name: 'Jane', age: 25, gender: 'female' },
-  { name: 'Bob', age: 40, gender: 'male' },
-  { name: 'Alice', age: 35, gender: 'female' },
-]
 
-export const filterFemalesAndMapNames = () => {
-  const females : Person[] = people?.filter((person: Person) => person?.gender === 'female')
-  const names: string[] = females?.map((person: Person) => person?.name)
+export const filterFemalesAndMapNames = (people: TPerson[]) => {
+  const females : TPerson[] = people?.filter((person: TPerson) => person?.gender === 'female')
+  const names: string[] = females?.map((person: TPerson) => person?.name)
   console.info("Names of females: ", names, "\n")
 }
