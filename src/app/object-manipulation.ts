@@ -5,3 +5,10 @@
     Write a function that takes the array and returns a new array with only the book titles. 
     Print the result.
 */
+
+import { TBook } from 'types/book'
+
+export const getBookTitles = (books: TBook[]) => {
+  const bookTitles: string[] = books?.map((book: TBook) => book?.title)
+  console.info('Book titles: ', bookTitles, '\n')
+}

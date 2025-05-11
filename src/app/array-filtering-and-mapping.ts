@@ -6,11 +6,10 @@
     Print the final result.
 */
 
-import { TPerson } from "types/person"
-
+import { TPerson } from 'types/person'
 
 export const filterFemalesAndMapNames = (people: TPerson[]) => {
-  const females : TPerson[] = people?.filter((person: TPerson) => person?.gender === 'female')
+  const females: TPerson[] = people?.filter((person: TPerson) => person?.gender === 'female')
   const names: string[] = females?.map((person: TPerson) => person?.name)
-  console.info("Names of females: ", names, "\n")
+  console.info('Names of females: ', names, '\n')
 }
