@@ -4,9 +4,10 @@ import { composeFunctions } from 'app/function-composition'
 import { checkLeapYear } from 'app/leap-year-checker'
 import { getBookTitles } from 'app/object-manipulation'
 import { sortCarsByYearAsc } from 'app/sorting-objects'
+import { getUniqueValues } from 'app/unique-values'
 import { books } from 'data/book'
 import { cars } from 'data/car'
-import { numbers } from 'data/number'
+import { numbers, numbersWithDuplicates } from 'data/number'
 import { people } from 'data/person'
 
 // * Problem 1
@@ -33,4 +34,7 @@ sumOfEvenNumbers(numbers)
 // * Problem 6
 console.info('\nProblem 6: Leap Year Checker \n')
 checkLeapYear(2000)
-checkLeapYear(2001)
+
+// * Problem 7
+console.info('\nProblem 7: Unique Values \n')
+getUniqueValues(numbersWithDuplicates)
