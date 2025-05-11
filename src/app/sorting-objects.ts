@@ -10,7 +10,8 @@ import { TCar } from 'types/car'
 
 export const sortCarsByYearAsc = (cars: TCar[]) => {
   // * sort by year asc
-  const sortedCars: TCar[] = cars?.sort((a: TCar, b: TCar) => a?.year - b?.year)
+  const shadowCars: TCar[] = [...cars] // * so that original array is not modified
+  const sortedCars: TCar[] = shadowCars?.sort((a: TCar, b: TCar) => a?.year - b?.year)
 
   // * print
   console.info('Given cars: ', cars, '\n')
@@ -22,7 +23,8 @@ export const sortCarsByYearAsc = (cars: TCar[]) => {
 
 export const sortCarsByYearDesc = (cars: TCar[]) => {
   // * sort by year desc
-  const sortedCars: TCar[] = cars?.sort((a: TCar, b: TCar) => b?.year - a?.year)
+  const shadowCars: TCar[] = [...cars] // * so that original array is not modified
+  const sortedCars: TCar[] = shadowCars?.sort((a: TCar, b: TCar) => b?.year - a?.year)
 
   // * print
   console.info('Given cars: ', cars, '\n')

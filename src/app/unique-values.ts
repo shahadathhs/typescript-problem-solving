@@ -21,10 +21,10 @@ export const getUniqueValues = (numbers: number[]) => {
 // * without set
 export const getUniqueValues2 = (numbers: number[]) => {
   // * get unique values in three steps
-    // take an empty array
-    // map over numbers array
-    // if number is not in uniqueValues array, push number to uniqueValues array
-  const uniqueValues: number[] = [] 
+  // take an empty array
+  // map over numbers array
+  // if number is not in uniqueValues array, push number to uniqueValues array
+  const uniqueValues: number[] = []
   numbers?.forEach((num: number) => {
     if (!uniqueValues?.includes(num)) {
       uniqueValues?.push(num)

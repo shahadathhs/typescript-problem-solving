@@ -6,7 +6,10 @@
 */
 
 export const sumOfEvenNumbers = (numbers: number[]) => {
-  const sum: number = numbers?.reduce((acc: number, num: number) => acc + (num % 2 === 0 ? num : 0), 0)
+  const sum: number = numbers?.reduce(
+    (acc: number, num: number) => acc + (num % 2 === 0 ? num : 0),
+    0,
+  )
 
   console.info('Given numbers: ', numbers, '\n')
   console.info('Sum of even numbers: ', sum, '\n')

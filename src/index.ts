@@ -1,3 +1,4 @@
+import { getStudentsByAverageGradeDesc } from 'app/advanced-sorting'
 import { filterFemalesAndMapNames } from 'app/array-filtering-and-mapping'
 import { sumOfEvenNumbers } from 'app/array-reduction'
 import { findMaximumValue } from 'app/find-maximum-value'
@@ -10,6 +11,7 @@ import { books } from 'data/book'
 import { cars } from 'data/car'
 import { numbers, numbersWithDuplicates } from 'data/number'
 import { people } from 'data/person'
+import { students } from 'data/student'
 
 // * Problem 1
 console.info('Problem 1: Array Filtering and Mapping \n')
@@ -27,7 +29,6 @@ composeFunctions(2)
 console.info('\nProblem 4: Sorting Objects \n')
 sortCarsByYearAsc(cars)
 
-
 // * Problem 5
 console.info('\nProblem 5: Array Reduction \n')
 sumOfEvenNumbers(numbers)
@@ -43,3 +44,7 @@ getUniqueValues(numbersWithDuplicates)
 // * Problem 8
 console.info('\nProblem 8: Find Maximum Value \n')
 findMaximumValue(numbers)
+
+// * Problem 9
+console.info('\nProblem 9: Advanced Sorting \n')
+getStudentsByAverageGradeDesc(students)
