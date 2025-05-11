@@ -1,4 +1,5 @@
 import { filterFemalesAndMapNames } from 'app/array-filtering-and-mapping'
+import { composeFunctions } from 'app/function-composition'
 import { getBookTitles } from 'app/object-manipulation'
 import { books } from 'data/book'
 import { people } from 'data/person'
@@ -12,3 +13,9 @@ filterFemalesAndMapNames(people)
 console.info('\nProblem 2: \n')
 console.info('Object Manipulation')
 getBookTitles(books)
+
+// * Problem 3
+console.info('\nProblem 3: \n')
+console.info('Function Composition')
+const result = composeFunctions(2)
+console.info(result)
